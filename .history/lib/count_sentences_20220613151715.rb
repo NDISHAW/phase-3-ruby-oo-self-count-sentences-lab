@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    end_with? (".")
+    end_with? ("!")
   end
 
   def question?
@@ -11,10 +11,10 @@ class String
   end
 
   def exclamation?
-    end_with? ("!")
+
   end
 
   def count_sentences
-    self.split(/\.|\?|!/).filter {|sentence| !sentence.empty?}.size
+
   end
 end
